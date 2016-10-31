@@ -4,7 +4,16 @@ Docker-compose setup for starting  [Træfik](https://traefik.io/) as reverse-pro
 
 ## Usage
 
-Put the files of this gist into a directory called `reverse-proxy` and run `docker-compose -d up` to startup the service.
+Clone this repository `reverse-proxy`, change mail-address and domain, 
+and then run `docker-compose -d up` to startup the service.
+
+```bash
+git clone https://github.com/docker-compose-examples/reverse-proxy
+sed -i 's/letsencrypt\@example\.com/mail@my-domain.com/g' traefik.toml
+sed -i 's/example\.com/my-domain.com/g' traefik.toml 
+```
+
+
 After that, you can "up" `docker-compose.yml`-files like:
 
 ```yaml
