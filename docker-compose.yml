@@ -16,4 +16,4 @@ services:
     cap_drop:
       - all
     cap_add:
-      - net_bind_service#
+      - net_bind_service
