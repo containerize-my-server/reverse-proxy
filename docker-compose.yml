@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  traefik:
+    build: .
+    # command: --logLevel=DEBUG
+    ports:
+      - "80:80"
+      - "443:443"
+      - "127.0.0.1:8080:8080"
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - default
+    cap_drop:
+      - all
+    cap_add:
+      - net_bind_service#
