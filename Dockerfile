@@ -1,4 +1,4 @@
-FROM traefik:camembert
+FROM traefik:1.3.5
 ADD traefik.toml .
 EXPOSE 80
 EXPOSE 8080
