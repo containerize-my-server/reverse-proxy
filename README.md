@@ -77,3 +77,6 @@ All files are mostly derived from each sofware's documentation.
 Treat this example as public domain (CC0). It took a while to get it
 running, but the amount of work was not high enough to put it under any license.
 
+# Contributing
+
+If you want to help out in keeping this repository up-to-date, please contact me or add a comment [here](https://github.com/containerize-my-server/reverse-proxy/issues/8)
